@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .gtco-nav #gtco-logo {
-  font-size: 30px;
+  font-size: 24px;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -615,8 +615,9 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-about,
 #gtco-practice-areas,
 #gtco-our-team,
+#gtco-donate,
 #gtco-contact {
-  padding: 4em 0;
+  padding: 5em 0;
   clear: both;
 }
 
@@ -723,6 +724,31 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-our-team .gtco-team .img-shadow img {
   top: -20px;
   left: -20px;
+}
+
+#gtco-donate .img-shadow {
+  position: relative;
+  background: #7ED321;
+  width: 100%;
+  float: left;
+}
+#gtco-donate .img-shadow img {
+  position: relative;
+  top: -20px;
+  left: -20px;
+}
+#gtco-donate .heading {
+  position: relative;
+}
+#gtco-donate .heading .subtle-text {
+  position: absolute;
+  bottom: -1.6em;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 208px;
+  color: #F8F8F8;
+  font-weight: 900;
+  z-index: -1;
 }
 
 #gtco-contact .heading {
