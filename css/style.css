@@ -19,60 +19,6 @@ body {
   background: #fff;
 }
 
-
-
-
-/*                MOBILE                   */
-
-/* @media screen and (max-width: 768px) {
-.gtco-nav #gtco-logo {
-font-size: 18px !important;
-}
-.carousel-control .icon-prev,
-.carousel-control .icon-next {
-font-size: 55px;
-}
-.carousel-control {
-margin-top: 60px;
-}
-.carousel-control .icon-next{
-margin-right: -33px;
-}
-.carousel-indicators {
-bottom: 0px;
-}
-.carousel .item {
-height: 180px;
-}
-#gtco-about .heading .subtle-text,
-#gtco-ministries .heading .subtle-text,
-#gtco-our-team .heading .subtle-text,
-#gtco-donate .heading .subtle-text,
-#gtco-contact .heading .subtle-text {
-font-size: 145px !important;
-}
-h2 {
-margin: 30px 0;
-}
-}
-
-@media screen (min-width:769px) and (max-width: 992px) {
-.gtco-cover {
-height: 480px;
-}
-.gtco-nav ul li a {
-font-size: 10px;
-padding: 30px 10px;
-}
-.gtco-nav #gtco-logo {
-font-size: 18px;
-}
-} */
-
-
-
-
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -137,6 +83,28 @@ font-size: 18px;
     }
     .carousel-inner > .focus {
         color: grey;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px; */
+      padding-top: 275px;
+
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      text-align: center;
+    }
+    .carousel-caption h1 {
+      padding-bottom: 10px;
+    }
+    .carousel-caption .btn {
+      margin-top: 20px;
     }
 
     /* MARKETING CONTENT
@@ -298,7 +266,7 @@ font-size: 18px;
         font-size: 12px;
         padding: 30px 10px;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.5);
+        color: #fff;
         font-weight: 400 !important;
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
@@ -394,6 +362,8 @@ font-size: 18px;
       }
       .gtco-nav ul li.active > a {
         color: #fff !important;
+        font-weight: bold !important;
+
       }
       .gtco-nav.scrolled {
         background: #fff;
@@ -523,52 +493,26 @@ font-size: 18px;
         z-index: 10;
       }
 
-@media screen and (max-width: 768px) {
-  .gtco-cover {
-    height: 180px;
-  }
-}
       .gtco-cover .display-t,
       .gtco-cover .display-tc {
         height: 900px;
         display: table;
         width: 100%;
       }
-@media screen and (max-width: 768px) {
-  .gtco-cover .display-t,
-  .gtco-cover .display-tc {
-    height: 600px;
-  }
-}
       .gtco-cover.gtco-cover-sm {
         height: 600px;
       }
-@media screen and (max-width: 768px) {
-  .gtco-cover.gtco-cover-sm {
-    height: 400px;
-  }
-}
       .gtco-cover.gtco-cover-sm .display-t,
       .gtco-cover.gtco-cover-sm .display-tc {
         height: 600px;
         display: table;
         width: 100%;
       }
-@media screen and (max-width: 768px) {
-  .gtco-cover.gtco-cover-sm .display-t,
-  .gtco-cover.gtco-cover-sm .display-tc {
-    height: 400px;
-  }
-}
+
       .gtco-cover.gtco-cover-xs {
         height: 500px;
       }
-@media screen and (max-width: 768px) {
-  .gtco-cover.gtco-cover-xs {
-    height: inherit !important;
-    padding: 3em 0;
-  }
-}
+
       .gtco-cover.gtco-cover-xs .display-t,
       .gtco-cover.gtco-cover-xs .display-tc {
         height: 500px;
@@ -724,6 +668,10 @@ font-size: 18px;
         color: #F8F8F8;
         font-weight: 900;
         z-index: -1;
+      }
+
+      #gtco-donate .list-inline li {
+        padding-bottom: 20px;
       }
 
       #gtco-contact .heading {
@@ -1419,4 +1367,58 @@ font-size: 18px;
         opacity: 0;
       }
 
-      /*# sourceMappingURL=style.css.map */
+      @media screen and (max-width: 399px) {
+        #gtco-hero.gtco-cover {
+          height: 110px;
+        }
+      }
+      @media screen and (min-width: 400px) and (max-width: 599px) {
+        #gtco-hero.gtco-cover {
+          height: 225px;
+        }
+      }
+      @media screen and (min-width: 600px) and (max-width: 767px) {
+        #gtco-hero.gtco-cover {
+          height: 315px;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        #gtco-hero.gtco-cover {
+          height: 425px;
+        }
+      }
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        #gtco-hero.gtco-cover {
+          height: 600px;
+        }
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        #gtco-hero.gtco-cover {
+          height: 700px;
+        }
+      }
+
+      @media screen and (max-width: 575px) {
+        .gtco-nav #gtco-logo {
+          font-size: 14px;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .carousel-control {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        .gtco-nav #gtco-logo {
+          padding-bottom: 20px;
+        }
+      }
+
+      @media screen and (max-width: 1549px) {
+        .carousel-indicators {
+          display: none;
+        }
+      }
